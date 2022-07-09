@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food service</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .image img{
+            height: 350px;
+            width: 84.285rem;
+        }
+        /* ______________designing header______________ */
+        .header_image img{
+            height: 40px;
+            width: 40px;
+            border-radius: 25px;
+            position: absolute;
+            top: 10px;
+            left: 40px;
+        }
+        .list_items{
+            position: absolute;
+            top: 13px;
+            left: 105px;
+            width: 23rem;
+        }
+        .list{
+            display: inline-block;
+            color: white; 
+            padding: 0.5rem 0.1rem;
+            font-size: 18px;
+        }
+        .list_items .list a{
+            text-decoration: none;
+            color: white;
+            padding: 4px 12px
+        }
+        .list a:hover{
+            /* text-decoration: underline; */
+            color: black;
+            background-color: white;
+            border: 1px solid red;
+        }
+        .header::before{
+            background-color: rgb(0, 0, 0);
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 66px;
+            width: 84.285rem;
+            opacity: 0.4;
+        }
+        /* ______________designing top_content (on top image)______________ */
+        .top_content{
+            position: absolute;
+            top: 116px;
+            left: 170px;
+            width: 1034px;
+            /* border is for trial purpose */
+            /* border: 2px solid yellow; */
+            color: white;
+            text-align: center;
+        }
+        .top_content .heading_1{
+            font-size: 20px;
+            padding: 14px 0px
+        }
+        .top_content .content_1{
+            font-size: 18px;
+        }
+        .top_content .button_1{
+            padding: 14px 0px    
+        }
+        .top_content .button_1 .btn{
+            border: 3.5px solid white;
+            background-color: #afec45;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 7px 28px;
+            cursor: pointer;
+        }
+        .top_content .button_1 .btn:hover{
+            color: #afec45;
+            border-color: #afec45;
+            background-color: white;
+        }
+        /* ______________designing body______________ */
+
+        /* this is for trial purpose */
+        /* .body{
+            border: 2px solid red;
+            width: 1366px;
+        } */
+        .body .body_header{
+            /* border is for trial purpose */
+            /* border: 2px solid red; */
+            text-align: center;
+            margin: 16px 0px;
+            width: 84.09rem;
+        }
+        .body .boxes{
+            /* border is for trial purpose */
+            /* border: 2px solid red; */
+            width: 84.09rem;
+        }
+        .body .box{
+            /* border is for trial purpose */
+            display: inline-block;
+            border: 3px solid red;
+            padding: 20px;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        .body #box-1{
+            width: 21em;
+            margin: 5px 28px;
+        }
+        .body #box-2{
+            width: 21em;
+            margin: 5px 28px;
+        }
+        .body #box-3{
+            width: 22em;
+            margin: 5px 28px;
+        }
+
+        .body #box-1 img{
+            height: 150px;
+            width: 150px;
+        }
+        .body #box-2 img{
+            height: 150px;
+            width: 150px;
+        }
+        .body #box-3 img{
+            height: 150px;
+            width: 150px;
+        }
+        /* ______________designing client______________ */
+        .client{
+            border-top: 2px solid grey;
+            border-bottom: 2px solid white;
+            height: 270px;
+            width: 84.285rem;
+            margin-top: 30px;
+        }
+        .client .text{
+            color: black;
+            font-size: 18px;
+            width: 125px;
+        }
+        .client .bg_image img{
+            height: 270px;
+            width: 84.285rem;
+            opacity: 0.7;
+        }
+        .client .text{
+            position: absolute;
+            top: 885px;
+            left: 622px;
+        }
+        .client .logo{
+            position: absolute;
+            top: 912px;
+            left: 180px;
+            width: 64rem;
+        }
+        .client .logo .logo_img img{
+            height: 182px;
+            width: 230px;
+        }
+        .client .logo .logo_img{
+            display: inline-block;
+        }
+        .client .logo #logo-2{
+            padding-right: 60px;
+            padding-left: 20px;
+        }
+        /* ______________designing contect______________ */
+        .contect .bg_image img{
+            height: 330px;
+            width: 84.285rem;
+            opacity: 0.3;
+        }
+        .contect .title{
+            position: absolute;
+            top: 1158px;
+            left: 612px;
+            width: 10rem;
+        }
+        .contect .contect_form{
+            /* border is for trial purpose */
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 1198px;
+            left: 423px;
+            font-weight: 600;
+        }
+        .contect .contect_form input{
+            border: 2px solid #9a9797;
+            height: 23px;
+            width: 500px;
+            border-radius: 6px;
+            padding: 1px 7px;
+        }
+        .contect .contect_form textarea{
+            border: 2px solid #9a9797;
+            height: 45px;
+            width: 500px;
+            border-radius: 6px;
+            padding: 3px 7px;
+            font-size: 15px;
+        }
+        .contect .contect_form button{
+            border: 4px solid white;
+            background-color: #afec45;
+            color: white;
+            border-radius: 7px;
+            padding: 5px 236px;
+            font-size: 14px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        .contect .contect_form button:hover{
+            border: 4px solid #afec45;
+            background-color: white;
+            color: #afec45;
+        }
+    </style>
+</head>
+<body>
+    <!-- ______________placing top image______________ -->
+    <div class="image">
+        <img src="c3.jpg" alt="image not found">
+    </div>
+    <!-- ______________creating header______________ -->
+    <div class="header">
+        <div class="header_image">
+            <img src="a2.jpg" alt="image not found">
+        </div>
+        <div class="list_items">
+            <ul>
+                <li class="list" id="list-1"><a href="#">Home</a></li>
+                <li class="list" id="list-2"><a href="#">Service</a></li>
+                <li class="list" id="list-3"><a href="#">About</a></li>
+                <li class="list" id="list-4"><a href="#">Contect Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ______________content on top image______________ -->
+    <div class="top_content">
+        <div class="heading_1">
+            <h1>Welcome to my Website</h1>
+        </div>
+        <div class="content_1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat porro quo mollitia nulla reprehenderit voluptatibus voluptas temporibus accusamus itaque, numquam libero facere magni quos laboriosam laborum nam cupiditate ex nihil.</p>
+        </div>
+        <div class="button_1">
+            <button class="btn">Order Now</button>
+        </div>
+    </div>
+    <!-- ______________main body______________ -->
+    <div class="body">
+        <div class="body_header">
+            <h1>Our Services</h1>
+        </div>
+        <div class="boxes">
+            <div class="box" id="box-1">
+                <img src="photo3.png" alt="image not found">
+                <h3>Food Ordering</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quia, eos dolore tempora at necessitatibus omnis cumque accusantium eaque amet nesciunt, magnam culpa earum rem aut cum ducimus! Quam dolore molestiae labore, dolorum quisquam soluta inventore? Iste dignissimos at, assumenda sequi necessitatibus nisi facere officia modi dolores dolorem voluptatem corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste dolor error nobis laboriosam quis!</p>
+            </div>
+            <div class="box" id="box-2">
+                <img src="photo1.png" alt="image not found">
+                <h3>Catering</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quia, eos dolore tempora at necessitatibus omnis cumque accusantium eaque amet nesciunt, magnam culpa earum rem aut cum ducimus! Quam dolore molestiae labore, dolorum quisquam soluta inventore? Iste dignissimos at, assumenda sequi necessitatibus nisi facere officia modi dolores dolorem voluptatem corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste dolor error nobis laboriosam quis!</p>
+            </div>
+            <div class="box" id="box-3">
+                <img src="photo2.png" alt="image not found">
+                <h3>Bulk Ordering</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quia, eos dolore tempora at necessitatibus omnis cumque accusantium eaque amet nesciunt, magnam culpa earum rem aut cum ducimus! Quam dolore molestiae labore, dolorum quisquam soluta inventore? Iste dignissimos at, assumenda sequi necessitatibus nisi facere officia modi dolores dolorem voluptatem corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste dolor error nobis laboriosam quis!</p>
+            </div>
+        </div>
+    </div>
+    <!-- ______________client body______________ -->
+    <div class="client">
+        <div class="bg_image">
+            <img src="d4.jpg" alt="image not found">
+        </div>
+        <div class="text">
+            <h2>Our Client</h2>
+        </div>
+        <div class="logo">
+            <div class="logo_img" id="logo-1">
+                <img src="logo1.png" alt="image not found">
+            </div>
+            <div class="logo_img" id="logo-2">
+                <img src="logo2.png" alt="image not found">
+            </div>
+            <div class="logo_img" id="logo-3">
+                <img src="logo3.png" alt="image not found">
+            </div>
+            <div class="logo_img" id="logo-4">
+                <img src="logo4.png" alt="image not found">
+            </div>
+        </div>
+    </div>
+    <!-- ______________creating contect body______________ -->
+    <div class="contect">
+        <div class="bg_image">
+            <img src="a2.jpg" alt="image not found">
+        </div>
+        <div class="title">
+            <h1>Contect Us</h1>
+        </div>
+        <div class="contect_form">
+            <form>
+                Name:<br><input type="text" placeholder="Enter Name"><br>
+                Email:<br><input type="email" placeholder="Enter Email"><br>
+                Phone Number:<br><input type="text" placeholder="Enter Phone Number"><br>
+                Message:<br><textarea cols="30" rows="3" placeholder="Enter Message"></textarea><br>
+                <button>Sand</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

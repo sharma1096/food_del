@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* ___________________designing header___________________ */
+.header{
+    border: 2px solid red;
+    height: 64px;
+    /* width: 90.9vw; */
+    display: inline-block;
+}
+.header .header_image img{
+    height: 46px;
+    width: 46px;
+    border-radius: 25px;
+}
+.header .list_items ul{
+    display: inline-block;
+}
+.header .list_items .list{
+    text-decoration: none;
+}
